@@ -1,6 +1,14 @@
 # Deckard (for Maven)
 
-[![Build Status](https://secure.travis-ci.org/robolectric/deckard-maven.png?branch=master)](http://travis-ci.org/robolectric/deckard-maven)
+This fork of Deckard has been minimally modified to support mutation testing.
+
+To mutation test use the pitest profile eg.
+
+```
+mvn -Ppitest test
+```
+
+After first following the original Deckard instructions below.
 
 Deckard is the simplest possible Android project that uses Robolectric for testing and Maven to build. It has one Activity (with an empty layout), and a Robolectric test that creates that Activity.
 
